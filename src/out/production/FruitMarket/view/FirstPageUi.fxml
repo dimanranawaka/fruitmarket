@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="FPageContext" prefHeight="600.0" prefWidth="1088.0" style="-fx-background-color: #111111;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirstPageUIForm">
+   <children>
+      <ImageView fitHeight="482.0" fitWidth="523.0" layoutX="467.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Assests/jxp4.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="600.0" prefWidth="380.0" style="-fx-background-color: #111111;">
+         <children>
+            <AnchorPane fx:id="FirstPageAnchorPaneContext" layoutX="12.0" layoutY="16.0" prefHeight="569.0" prefWidth="359.0" style="-fx-background-color: #2d3436; -fx-background-radius: 10;">
+               <children>
+                  <TextField fx:id="StartUpSystemName" layoutX="22.0" layoutY="265.0" onAction="#shiftNextOnAction" opacity="0.5" prefHeight="40.0" prefWidth="316.0" promptText="User Name" />
+                  <PasswordField fx:id="StartUpSystemPassword" layoutX="22.0" layoutY="322.0" opacity="0.5" prefHeight="40.0" prefWidth="316.0" promptText="Password" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="115.0" layoutY="74.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/Assests/password.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="142.0" layoutY="377.0" onAction="#SystemStartUpOnAction" opacity="0.78" ripplerFill="#163dbc" style="-fx-background-color: #ffffff;" text="Login">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator layoutX="22.0" layoutY="453.0" prefHeight="4.0" prefWidth="316.0" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="142.0" layoutY="474.0" onMouseClicked="#goToGoogle" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/google.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="298.0" layoutY="473.0" onMouseClicked="#goToFacebook" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="22.0" layoutY="480.0" text="Amazon Fresh" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="198.0" layoutY="481.0" prefHeight="25.0" prefWidth="95.0" text="Amazon FB" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="22.0" layoutY="527.0" prefHeight="4.0" prefWidth="316.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="303.0" layoutY="270.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/Users_30px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblHide" layoutX="303.0" layoutY="327.0" onMousePressed="#showPasswordOnMousePressed" onMouseReleased="#hidePasswordOnMousePressed" prefHeight="30.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/hide.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="545.0" text="Chartered business in Amazon Fresh ©">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="109.0" layoutY="48.0" text="Sign-In to Proceed" textFill="WHITE">
+         <font>
+            <Font name="Caladea Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

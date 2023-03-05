@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="814.0" prefWidth="1075.0" style="-fx-background-color: #2d3436;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DevInfoFormController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="803.0" prefWidth="1078.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <ImageView fitHeight="803.0" fitWidth="1078.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Assests/Lices.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="113.0" layoutY="652.0" onMouseClicked="#GotoFacebook" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/facebook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="66.0" layoutX="200.0" layoutY="652.0" onMouseClicked="#GotoLinkdein" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/linkedin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="294.0" layoutY="652.0" onMouseClicked="#GotoGitHub" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Assests/GitHub-Mark.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="72.0" layoutX="379.0" layoutY="643.0" onMouseClicked="#GoToTelegram" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Assests/icons8-telegram-app-240.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
